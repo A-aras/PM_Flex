@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <ng-template #searchModel>
+    <!-- <div class="modal fade" bsModal #searchModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-static-name"> -->
+      <!-- <div class="modal-dialog modal-lg">
+        <div class="modal-content"> -->
+          <div class="modal-header">
+            <h4 id="dialog-static-name" class="modal-title pull-left">
+              Select manager for the project
+            </h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="searchModal.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- <app-search-manager [modalDisplayed]='searchModalDisplayed' (rowSelected)="HandleRowSelection($event)"></app-search-manager> -->
+  
+            <div class="row ">
+              <div class=" col-2">
+                <form [formGroup]="searchForm">
+                  <input id="searchInput" type="text" placeholder="Search..." class="form-control" [formControl]="searchInputControl" />
+                </form>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-12">
+                <div class="table-responsive">
+                  <table class="table table-stripped" *ngIf="columnsDisplay!=null">
+                    <thead >
+                      <tr>
+                        <th *ngFor="let column of   columnsDisplay">
+                          {{column}}
+                        </th>
+                      </tr>
+                    </thead>
+  
+                    <!-- <tr *ngFor="let item of  (inputValue
+                            | commonFilter
+                              : searchFields
+                              : searchUserInputValue)" (click)="SelectRow(item)" [ngClass]="{'highlight' : IsRowSelected(item)}"> -->
+  
+                    <tbody>
+                      
+  
+                      <!-- <tr *ngFor="let item of  inputValue" > -->
+                         <tr *ngFor="let item of  (inputValue
+                            | commonFilter
+                              : searchFields
+                              : searchInputValue)" (click)="SelectRow(item)" [ngClass]="{'highlight' : IsRowSelected(item)}">
+  
+                        <td *ngFor="let column of   columnsDisplay">
+                          <div class="container-fluid  ">
+                            <span class="label label-default label-fill">{{ item[column] }}
+                            </span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="confirm()" [disabled]="! rowSelected">
+              Ok
+            </button>
+            <button type="button" class="btn btn-primary" (click)="decline()">
+              Cancel
+            </button>
+          </div>
+        <!-- </div>
+      </div> -->
+    <!-- </div> -->
+  </ng-template>
+  
+  
+  </div>
+  

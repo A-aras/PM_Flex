@@ -1,0 +1,140 @@
+<div class="container-fluid">
+    <div class="row container-fluid">
+      <div class="col-sm-2">
+        <form [formGroup]="searchForm">
+          <input id="searchInput" type="text" placeholder="Search..." class="form-control" [formControl]="searchInputControl" />
+        </form>
+      </div>
+      <div class="col-sm-5 form-inline col-ignore-padding ">
+        <div class="col-sm-1 reponseiveRowMargin">
+          <span>Sort:</span>
+        </div>
+        <div class="col-sm-11 btn-group ">
+          <button class="col-sm-3 btn btn-primary btn-action-margin" (click)="onSort('StartDate')" value="StartDate">
+            Start Date
+          </button>
+          <button class="col-sm-3  btn btn-primary btn-action-margin" (click)="onSort('EndDate')" value="EndDate">
+            End Date
+          </button>
+  
+          <button class="col-sm-3 btn btn-primary btn-action-margin" (click)="onSort('Priority')" value="Priority">
+            Priority
+          </button>
+  
+          <button class="col-sm-3 btn btn-primary btn-action-margin" (click)="onSort('NoOfClosedTasks')" value="Completed">
+            Completed
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row container-fluid">
+      <div class="col-sm-7">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="
+              let project of (projects
+                | sort: sortBy | commonFilter: ['Project']:searchUserInputValue ) ">
+            <div class="container-fluid additional-margin">
+              <div class="row container-fluid">
+                <div class="col-sm-6" style="background-color: lightgray">
+                  <div class="row container-fluid" style="padding: 10px">
+                    <span>Project: {{ project.Project }}</span>
+                  </div>
+  
+                  <div class="row container-fluid" style="padding: 10px">
+                    <div class="col-lg-6 col-ignore-padding">
+                      <span>No of Tasks: {{ project.Tasks | arraylenght }}</span>
+                    </div>
+                    <div class="col-lg-6 col-ignore-padding">
+                      <span>Completed: {{ project.NoOfClosedTasks }}</span>
+                    </div>
+                  </div>
+  
+                  <div class="row container-fluid" style="padding: 10px">
+                    <div class="col-lg-6 col-ignore-padding">
+                      <span>Start Date : {{ project.StartDate |date:"dd/MMM/yyyy" }}</span>
+                    </div>
+                    <div class="col-lg-6 col-ignore-padding">
+                      <span>End Date : {{ project.EndDate |date:"dd/MMM/yyyy" }}</span>
+                    </div>
+                  </div>
+  
+                </div>
+  
+                <div class="col-sm-4 container-fluid" style="margin-left: 5px;">
+                  <div class="row container-fluid details-header-panel-height  col-ignore-padding">
+                    <span style="text-align: center;height: 100%;width: 100%;">Priority</span>
+                  </div>
+  
+                  <div class="row container-fluid details-details-panel-height col-ignore-padding" style="background-color: lightgray;">
+                    <span style="text-align: center; align-content: center; vertical-align: middle; background-color: lightgray;height: 100%;width: 100%;">{{ project.Priority }}</span>
+                  </div>
+                </div>
+  
+  
+                <div class="col-sm-1 container-fluid "  >
+                  
+                    <div class="row container-fluid reponseiveRowMargin ">
+                      <button class="btn btn-primary" [disabled]="!project.IsActive" (click)="onEditProject(project)">
+                        Update
+                      </button>
+                    </div>
+                    <div class="row container-fluid reponseiveRowMargin" >
+                      <button class="btn btn-primary" (click)="onSuspendProject(project)">
+                        {{project.IsActive ? 'Suspend':'Resume'}}
+                      </button>
+                    </div>
+                  </div>
+  
+  
+                <!-- <div class="col-8" style="background-color: lightgray">
+                  <div class="row col-12" style="margin-bottom: 5px; margin-top: 5px">
+                    <span>Project: {{ project.Project }}</span>
+                  </div>
+                  <div class="row " style="margin-bottom: 5px; margin-top: 5px">
+                    <div class="col-6 " style="margin-bottom: 5px; margin-top: 5px">
+                      <span>No of Tasks: {{ project.Tasks | arraylenght }}</span>
+                    </div>
+                    <div class="col-6">
+                        <span>Completed: {{ project.NoOfClosedTasks }}</span>
+                    </div>
+                  </div>
+  
+                  <div class="row ">
+                    <div class="col-6 container-fluid">
+                      <span>Start Date : {{ project.StartDate |date:"dd/MMM/yyyy" }}</span>
+                    </div>
+                    <div class="col-6 container-fluid">
+                      <span>End Date : {{ project.EndDate |date:"dd/MMM/yyyy" }}</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-2" style="margin-left: 5px;">
+                  <div class="row container-fluid">
+                    <span>Priority</span>
+                  </div>
+                  <div class="row container-fluid center-block text-center" style="background-color: lightgray; height: 75%;width: 100%; display: grid">
+                    <span>{{ project.Priority }}</span>
+                  </div>
+                </div>
+  
+                <div class="col" >
+                  <div class="row container-fluid">
+                    <button class="btn btn-primary" style=" margin-bottom: 5px " [disabled]="!project.IsActive" (click)="onEditProject(project)">
+                      Update
+                    </button>
+                  </div>
+                  <div class="row container-fluid" style=" margin-top: 5px">
+                    <button class="btn btn-primary" (click)="onSuspendProject(project)">
+                      {{project.IsActive ? 'Suspend':'Resume'}}
+                    </button>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

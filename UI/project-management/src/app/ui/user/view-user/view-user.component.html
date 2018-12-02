@@ -1,0 +1,134 @@
+<div class="container-fluid">
+    <div class="row container-fluid">
+      <div class="col-sm-2">
+        <form [formGroup]="searchForm">
+          <input id="searchInput" type="text" placeholder="Search..." class="form-control" [formControl]="searchInputControl" />
+        </form>
+      </div>
+      <div class="col-sm-5 form-inline col-ignore-padding ">
+        <div class="col-sm-1 reponseiveRowMargin">
+          <span>Sort:</span>
+        </div>
+        <div class="col-sm-11 btn-group ">
+          <button class="col-sm-3 btn btn-primary btn-action-margin" (click)="onSort('FirstName')" value="FirstName">
+                First Name
+            </button>
+          <button class="col-sm-3  btn btn-primary btn-action-margin" (click)="onSort('LastName')" value="LastName">
+                Last Name
+            </button>
+  
+          <button class="col-sm-3 btn btn-primary btn-action-margin" (click)="onSort('EmployeeId')" value="EmployeeId">
+                Id
+            </button>
+  
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  
+  <div class="container-fluid">
+    <!-- <div class="row form-group">
+      <div class="col-2">
+        <form [formGroup]="searchForm">
+          <input id="searchInput" type="text" placeholder="Search..." class="form-control" [formControl]="searchInputControl" />
+        </form>
+      </div>
+      <div class="col-4 form-inline">
+        <div class="col-1">
+          <span>Sort:</span>
+        </div>
+        <div class="col btn-group">
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('FirstName')" value="FirstName">
+              First Name
+            </button>
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('LastName')" value="LastName">
+              Last Name
+            </button>
+  
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('EmployeeId')" value="EmployeeId">
+              Id
+            </button>
+        </div>
+      </div>
+    </div> -->
+  
+    <div class="row container-fluid">
+      <div class="col-sm-5">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let user of users | commonFilter:['FirstName','LastName']:searchUserInputValue | sort:sortBy">
+            <div class="container-fluid additional-margin">
+              <div class="row container-fluid">
+                <div class="col-sm-6">
+                  <div class="row container-fluid" style="padding: 10px">
+                    <h5> {{ user.FirstName }}</h5>
+                  </div>
+                  <div class="row container-fluid" style="padding: 10px">
+                    <h5> {{ user.LastName }}</h5>
+                  </div>
+                  <div class="row container-fluid" style="padding: 10px">
+                    <h5> {{ user.EmployeeId }}</h5>
+                  </div>
+                </div>
+  
+                <div class="col-sm-2 container-fluid ">
+                  <div class="row container-fluid reponseiveRowMargin ">
+                    <button class="btn btn-primary" (click)="onEditUser(user)">
+                            Update
+                          </button>
+                  </div>
+                  <div class="row container-fluid reponseiveRowMargin">
+                    <button class="btn btn-primary" (click)="onDeleteUser(user)">
+                        Delete
+                          </button>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-6">
+        <div class="list-group">
+          <a class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let user of users | commonFilter:['FirstName','LastName']:searchUserInputValue | sort:sortBy">
+            <div class="container-fluid additional-margin">
+              <div class="row">
+                <div class="w-75">
+                  <h5>{{ user.FirstName }}</h5>
+                </div>
+                <div class="w-25">
+                  <button class="btn btn-primary" (click)="onEditUser(user)">
+                    Edit
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="container-fluid additional-margin">
+              <div class="row">
+                <div class="w-75">
+                  <h5>{{ user.LastName }}</h5>
+                </div>
+                <div class="w-25">
+                  <button class="btn btn-primary" (click)="onDeleteUser(user)">
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="container-fluid">
+              <div class="row">
+                <div class="w-75">
+                  <h5>{{ user.EmployeeId }}</h5>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> -->
+  </div>

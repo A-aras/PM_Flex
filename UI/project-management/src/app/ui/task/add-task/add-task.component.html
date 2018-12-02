@@ -1,0 +1,230 @@
+<form [formGroup]="taskForm" class="form-horizontal formStyle" >
+  <div class="container-fluid justify-content ">
+    <div class="row container-fluid reponseiveRowMargin">
+      <div class="row container-fluid reponseiveRowMargin">
+        <label for="projectInput" class="col-form-label col-sm-1 reponsiveLabel">Project :
+        </label>
+        <input id="projectInput" type="text" placeholder="Project..." class="form-control col-sm-5" [readonly]="true" [formControl]="projectControl"
+        />
+        <div class="form-group form-inline col-sm-2 col-ignore-padding">
+          <button class="btn btn-primary btn-reponsive-margin" (click)="onSearchProject()" value="Search" [disabled]="btnAction==='Save'">
+            Search
+          </button>
+        </div>
+        <div *ngIf="projectControl.invalid &&  projectControl.dirty && projectControl.errors?.required" class="alert alert-danger col-sm-4">
+          Project is Required
+        </div>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <label for="taskInput" class="col-form-label col-sm-1 reponsiveLabel">Task : </label>
+        <div class="form-group form-inline col-sm-5 col-ignore-padding">
+          <input id="taskInput" type="text" placeholder="Task Description..." class="form-control col-sm-12" [formControl]="taskControl"
+          />
+        </div>
+        <div *ngIf="
+            taskControl.invalid &&
+            taskControl.dirty &&
+            taskControl.errors?.required
+          " class="alert alert-danger col-sm-6">
+          Task is Required
+        </div>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <div class="form-group form-inline col-sm-5 offset-1 col-ignore-padding ">
+          <label class="checkbox-inline col-ignore-padding form-inline-leftAlign">
+            <input type="checkbox" class="form-check-input" [formControl]="isParentTaskControl" />&nbsp;&nbsp;&nbsp; Set as Parent Task</label>
+        </div>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <label for="taskPriority" class="col-form-label col-sm-1 reponsiveLabel">
+          Priority:
+        </label>
+
+        <div class="form-group form-inline col-sm-5 col-ignore-padding " style="padding-left:0px!important; padding-right:0px!important">
+          <label class="slider-text-position-min col-form-label reponsiveLabel">0</label>
+          <input type="range" min="0" max="30" class="form-control-range custom-range" id="taskPriority" [formControl]="taskPriorityControl"
+          />
+          <label class="slider-text-position-max col-form-label">30</label>
+        </div>
+        <div *ngIf="
+            taskPriorityControl.invalid &&
+            taskPriorityControl.dirty &&
+            taskPriorityControl.errors?.required
+          " class="alert alert-danger col-sm-6">
+          Priority is required
+        </div>
+        <div *ngIf="
+            taskPriorityControl.invalid &&
+            taskPriorityControl.dirty &&
+            taskPriorityControl.errors?.min
+          " class="alert alert-danger col-sm-6">
+          Priority must be greater than {{ priorityMin }}
+        </div>
+        <div *ngIf="
+            taskPriorityControl.invalid &&
+            taskPriorityControl.dirty &&
+            taskPriorityControl.errors?.max
+          " class="alert alert-danger col-sm-6">
+          Priority must be less than {{ priorityMax }}
+        </div>
+      </div>
+
+      <!--
+        <div class="row form-group form-inline ">
+          <label for="parentTaskInput" class="col-form-label col-1">Parent Task :
+          </label>
+          <div class="form-group form-inline col-6">
+            <input id="parentTaskInput" type="text" placeholder="Parent Task..." class="form-control col-6" [formControl]="parentTaskControl" />
+
+            <div class="form-group form-inline col-2 col-ignore-padding">
+              <button class="btn btn-primary btn-form-margin" style="width: 100%" [disabled]=" model.IsParentTask" (click)="onSearchParentTask()" value="Search">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      -->
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <label for="parentTaskInput" class="col-form-label col-sm-1 reponsiveLabel">Parent Task :
+        </label>
+        <input id="parentTaskInput" type="text" placeholder="Parent Task..." [readonly]="true" class="form-control col-sm-5" [formControl]="parentTaskControl"
+        />
+        <div class="form-group form-inline col-sm-2 col-ignore-padding">
+          <button class="btn btn-primary btn-reponsive-margin" [disabled]="model.IsParentTask" (click)="onSearchParentTask()" value="Search">
+            Search
+          </button>
+        </div>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <form [formGroup]="dateFormGroup" class="form-inline form-leftAlign" style="width: 100%">
+          <!-- <div class="form-group form-inline "> -->
+          <label for="startDateInput" class="col-form-label col-sm-1 reponsiveLabel">
+            Start Date:
+          </label>
+
+          <div class="col-sm-2 col-ignore-padding">
+            <input id="startDateInput" type="text" placeholder="Start Date" class="form-control" style="width: 100%" [formControl]="startDateControl"
+              bsDatepicker [bsConfig]="{
+                dateInputFormat: 'DD-MM-YYYY',
+                containerClass: 'theme-dark-blue'
+              }" />
+          </div>
+
+          <label for="endDateInput" class="col-form-label col-sm-1 reponsiveLabel">
+            End Date:
+          </label>
+
+          <div class="col-sm-2 col-ignore-padding">
+            <input id="endDateInput" type="text" placeholder="Start Date" class="form-control " style="width: 100%" [formControl]="endDateControl"
+              bsDatepicker [bsConfig]="{
+                dateInputFormat: 'DD-MM-YYYY',
+                containerClass: 'theme-dark-blue'
+              }" />
+          </div>
+
+          <div class="col-sm-6">
+            <div *ngIf="
+                startDateControl.invalid && startDateControl.errors?.required
+              " class="alert alert-danger row">
+              Start Date is Required
+            </div>
+
+            <div *ngIf="endDateControl.invalid && endDateControl.errors?.required" class="alert alert-danger row">
+              End Date is Required
+            </div>
+
+            <div *ngIf="dateFormGroup.invalid && dateFormGroup.dirty" class="alert alert-danger row">
+              To Date must be greater than Start Date
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <label for="userInput" class="col-form-label col-sm-1 reponsiveLabel">User :
+        </label>
+        <input id="userInput" type="text" placeholder="User..." [readonly]="true" class="form-control col-sm-5" [formControl]="userControl" />
+
+        <div class="form-group form-inline col-sm-2 col-ignore-padding">
+          <button class="btn btn-primary btn-reponsive-margin" (click)="onSearchUser()" value="Search">
+            Search
+          </button>
+        </div>
+        <div *ngIf="userControl.invalid && userControl.dirty && userControl.errors?.required" class="alert alert-danger col-sm-4">
+          User is Required
+        </div>
+      </div>
+
+      <div class="row container-fluid reponseiveRowMargin">
+        <div class="col-sm-6 col-ignore-padding">
+          <div class="float-right col-ignore-padding justify-content-end">
+            <button class="btn btn-primary btn-action-margin col-auto" (click)="onTaskSave()" value="Add Task">{{btnAction}} Task</button>
+            <button class="btn btn-primary btn-action-margin col-auto" value="Reset" type="reset">Reset</button>
+
+            <app-search-module [inputValue]="serarchInputValues" [columnsDisplay]="columnsDisplay" [fieldType]="popupModelType" [searchFields]="searchFields"
+              (rowSelected)="HandleRowSelected($event)"></app-search-module>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" bsModal #alertModal="bs-modal" [config]="{ backdrop: 'static' }" tabindex="-1" role="dialog" aria-labelledby="dialog-static-name">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-static-name" class="modal-title pull-left">
+            Confirm?
+          </h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="alertModal.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Do you want to {{ btnAction }} Task?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" (click)="confirmAlertModal()">
+            Yes
+          </button>
+          <button type="button" class="btn btn-default" (click)="declineAlertModal()">
+            No
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    <div class="modal fade" bsModal #searchModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-static-name">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="dialog-static-name" class="modal-title pull-left">
+              Select manager for the project
+            </h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="searchModal.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <app-search-manager [modalDisplayed]='searchModalDisplayed' (rowSelected)="HandleRowSelection($event)"></app-search-manager>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="confirm()" [disabled]="selectedRow==null">
+              Ok
+            </button>
+            <button type="button" class="btn btn-primary" (click)="decline()">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+</form>

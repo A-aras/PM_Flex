@@ -1,0 +1,58 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="RunUnitTests" ToolVersions="12.0">
+  <ItemGroup>
+    <BuildArtifactsDir Include="BuildArtifacts\" />
+    <SolutionFile Include="ProjectManager.Service.sln" />
+    <NunitConsole Include="C:\Program Files (x86)\NUnit 2.6.1\bin\nunit-console.exe" />
+    <NunitDll Include="ProjectManager.Api.Tests.dll" />
+    <TestResult Include="TestResult.xml" />
+	<BuildAftifacts Include="BuildArtifacts\_PublishedWebsites\ProjectManager.Api\**\*.*" />
+	<!-- <PublishDir Include="C:\inetpub\wwwroot\TaskService\**/*" /> -->
+	<!-- <PublishFolderPath Include="C:\inetpub\wwwroot\TaskService/**/*" /> -->
+	<NBenchDir Include="NBench\" />
+	<PerformanceMesureAssembly Include="ProjectManager.Api.PerformanceTest.dll" />
+  </ItemGroup>
+  
+  
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <BuildPlatform Condition=" '$(BuildPlatform)' == '' ">Any CPU</BuildPlatform>
+  </PropertyGroup>
+
+  <Target Name="Clean">
+    <RemoveDir Directories="@(BuildArtifactsDir)" />
+  </Target>
+
+  <Target Name="Init" DependsOnTargets="Clean">
+    <MakeDir Directories="@(BuildArtifactsDir)" />
+  </Target>
+
+  <Target Name="Compile" DependsOnTargets="Init">
+    <MSBuild Projects="@(SolutionFile)" Targets="Rebuild"
+             Properties="OutDir=%(BuildArtifactsDir.FullPath);Configuration=$(Configuration);Platform=$(BuildPlatform)" />
+  </Target>
+  
+    <Target Name="RunUnitTests" DependsOnTargets="Compile">
+    <Exec Command='"@(NunitConsole)" @(BuildArtifactsDir)\@(NunitDll) /xml:@(BuildArtifactsDir)\@(TestResult)'/>
+  </Target>
+  
+        <Target Name="RunPerfTests" DependsOnTargets="Compile">
+    <Exec Command="%(NBenchDir.FullPath)\NBench.Runner.exe %(BuildArtifactsDir.FullPath)\@(PerformanceMesureAssembly) output-directory=%(BuildArtifactsDir.FullPath)\PerfResult"/>
+  </Target>
+  
+      <Target Name="DeployToIIs" DependsOnTargets="Compile">
+    <Copy SourceFiles="@(BuildAftifacts)" DestinationFiles="@(BuildAftifacts-> 'C:\inetpub\wwwroot\ProjectManagerService\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  
+        <Target Name="OnlyDeployToIIS" >
+		<Copy SourceFiles="@(BuildAftifacts)" DestinationFiles="@(BuildAftifacts-> 'C:\inetpub\wwwroot\ProjectManagerService\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  
+  <!-- DependsOnTargets="Compile" -->
+  
+  <!--<Target Name="EchoGreeting" >
+    <Exec Command="echo %25date%25" />
+  </Target>-->
+
+</Project>

@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Summary numSequencePoints="121" visitedSequencePoints="114" numBranchPoints="50" visitedBranchPoints="44" sequenceCoverage="94.21" branchCoverage="88" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="14" numMethods="14" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="E9-44-01-FC-CB-61-15-DF-2A-9E-BA-74-B2-69-75-14-C2-8D-29-D9">
+      <ModulePath>C:\WINDOWS\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-09-11T01:23:32.7044609Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-04-A8-31-CD-FB-23-72-95-63-5D-14-9A-A0-66-8E-7F-44-93-7A">
+      <ModulePath>C:\WINDOWS\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sorttbls.nlp</ModulePath>
+      <ModuleTime>2018-09-10T19:23:35.4138421Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6E-30-2E-50-36-FB-60-2C-8E-50-C0-83-54-8B-CC-EA-A8-91-B6-CC">
+      <ModulePath>C:\WINDOWS\assembly\GAC_64\mscorlib\2.0.0.0__b77a5c561934e089\sortkey.nlp</ModulePath>
+      <ModuleTime>2018-09-10T19:23:35.6325662Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="76-94-1F-4A-49-D5-39-68-7D-3F-F4-95-55-3D-ED-D1-4C-C3-45-9C">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\nunit-console.exe</ModulePath>
+      <ModuleTime>2012-08-04T10:08:36Z</ModuleTime>
+      <ModuleName>nunit-console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DB-17-9C-E6-3C-77-5A-A4-6F-5F-4C-FB-FA-68-1F-B5-02-76-57-12">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit-console-runner.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:36Z</ModuleTime>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A7-7E-AB-C5-2A-FE-F9-D4-CC-67-6A-D5-8C-0B-C4-2D-5C-D1-CD-65">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="92-AA-30-67-EA-08-01-EA-3F-25-BE-3A-9C-BA-AE-DF-5D-F1-22-9E">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:34Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="73-5E-17-EE-D5-9C-28-AE-E3-A7-BD-34-38-AA-AC-45-CB-60-D6-0F">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D5-2D-35-25-83-75-E1-FF-01-5D-9D-43-90-C4-A9-A2-2F-9A-37-67">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:23:39.6481945Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F8-C5-15-4B-64-7C-42-48-76-D0-AA-41-FB-D7-F8-59-07-8C-5C-15">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:36:45.4763193Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="7B-D1-22-5B-7B-A7-FE-8B-DA-9A-45-CC-F9-72-CF-A3-7D-28-1B-FF">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:23:39.9138396Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="52-D9-3C-F8-7B-3B-11-89-F1-EA-BF-2B-83-43-2C-E5-9B-45-9E-BC">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:23:39.866945Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-6A-AC-B8-C5-F9-9E-8D-B4-D7-6D-60-9E-83-94-CE-B5-8C-9D-A0">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-09-11T01:23:35.0015265Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="34-0B-63-A5-3D-FB-89-7C-30-E8-EB-65-6F-66-89-61-A1-7E-B1-F7">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\nunit-agent.exe</ModulePath>
+      <ModuleTime>2012-08-04T10:08:36Z</ModuleTime>
+      <ModuleName>nunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A7-7E-AB-C5-2A-FE-F9-D4-CC-67-6A-D5-8C-0B-C4-2D-5C-D1-CD-65">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="92-AA-30-67-EA-08-01-EA-3F-25-BE-3A-9C-BA-AE-DF-5D-F1-22-9E">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:34Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="73-5E-17-EE-D5-9C-28-AE-E3-A7-BD-34-38-AA-AC-45-CB-60-D6-0F">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BA-D5-C6-DC-0C-59-DA-6B-C8-40-22-29-40-86-10-C6-40-6D-57-E5">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-08-14T02:15:16.7427109Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B5-2C-52-19-7F-DE-8E-1A-EE-7C-F3-4D-31-FC-77-A2-C4-49-EE-AB">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0134Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2A-F4-1C-14-5D-7A-74-B3-03-8B-1D-2A-59-DC-B6-BE-1D-C8-EF-54">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:16.9508953Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-26-5B-FA-55-E9-5B-BC-DD-3A-32-56-2C-38-71-11-1A-8E-6D-32">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0290261Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5D-11-B3-06-06-08-5F-E2-66-89-AE-C6-ED-96-26-D1-36-92-44-EF">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:36:37.788831Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5D-98-3D-00-86-C2-13-75-08-F8-BB-7C-57-A5-00-B7-89-45-A6-5B">
+      <ModulePath>C:\WINDOWS\assembly\GAC_64\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-09-10T19:23:38.8981938Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A7-7E-AB-C5-2A-FE-F9-D4-CC-67-6A-D5-8C-0B-C4-2D-5C-D1-CD-65">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BA-D5-C6-DC-0C-59-DA-6B-C8-40-22-29-40-86-10-C6-40-6D-57-E5">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-08-14T02:15:16.7427109Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="73-5E-17-EE-D5-9C-28-AE-E3-A7-BD-34-38-AA-AC-45-CB-60-D6-0F">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:30Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="1A-16-F9-EE-D6-9C-A5-11-0A-63-E6-1F-8C-DA-A8-00-4A-37-8E-7A">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.Api.Tests.dll</ModulePath>
+      <ModuleTime>2018-11-28T05:02:31.715686Z</ModuleTime>
+      <ModuleName>ProjectManager.Api.Tests</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AF-00-89-8E-23-29-6C-3D-DA-76-42-D2-8F-D5-0D-78-C7-55-E7-F5">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\nunit.framework.dll</ModulePath>
+      <ModuleTime>2018-03-12T17:28:16Z</ModuleTime>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DB-17-9C-E6-3C-77-5A-A4-6F-5F-4C-FB-FA-68-1F-B5-02-76-57-12">
+      <ModulePath>C:\Program Files (x86)\NUnit 2.6.1\bin\lib\nunit-console-runner.dll</ModulePath>
+      <ModuleTime>2012-08-04T10:08:36Z</ModuleTime>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B5-2C-52-19-7F-DE-8E-1A-EE-7C-F3-4D-31-FC-77-A2-C4-49-EE-AB">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0134Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2A-F4-1C-14-5D-7A-74-B3-03-8B-1D-2A-59-DC-B6-BE-1D-C8-EF-54">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:16.9508953Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-26-5B-FA-55-E9-5B-BC-DD-3A-32-56-2C-38-71-11-1A-8E-6D-32">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0290261Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DF-22-8C-ED-9D-B0-DB-63-63-08-F7-FC-67-8F-09-C3-CA-88-5F-68">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.BusinessLayer.dll</ModulePath>
+      <ModuleTime>2018-11-28T03:53:20.4273154Z</ModuleTime>
+      <ModuleName>ProjectManager.BusinessLayer</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C6-0C-FC-D7-BD-3D-2B-EB-27-3E-72-A9-A9-82-4C-6D-8C-5B-59-10">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\Unity.Container.dll</ModulePath>
+      <ModuleTime>2018-08-31T22:29:40Z</ModuleTime>
+      <ModuleName>Unity.Container</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F5-2F-9C-89-88-0A-2F-64-FD-97-36-8D-B9-93-25-88-4B-44-49-41">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\Unity.Abstractions.dll</ModulePath>
+      <ModuleTime>2018-08-12T16:18:58Z</ModuleTime>
+      <ModuleName>Unity.Abstractions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2E-0B-A5-F8-24-60-51-6D-2A-67-DF-B7-D7-00-1E-63-89-F5-7B-4C">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.DAL.dll</ModulePath>
+      <ModuleTime>2018-11-25T14:33:23.0145885Z</ModuleTime>
+      <ModuleName>ProjectManager.DAL</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="12-3F-E3-10-D1-D0-35-93-2B-65-FA-C5-00-62-09-C4-DC-D6-92-BF">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\EntityFramework.dll</ModulePath>
+      <ModuleTime>2017-10-23T07:45:18Z</ModuleTime>
+      <ModuleName>EntityFramework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9F-32-12-F3-6F-2C-C8-AD-2D-E2-5E-7C-B9-70-3C-B6-33-31-18-76">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.QualityTools.dll</ModulePath>
+      <ModuleTime>2018-11-25T14:33:54.4129078Z</ModuleTime>
+      <ModuleName>ProjectManager.QualityTools</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B7-26-AA-07-03-35-B4-5B-C0-F9-4C-1B-20-97-52-D0-F7-F1-25-6F">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.Entities.dll</ModulePath>
+      <ModuleTime>2018-11-25T07:41:28.3399787Z</ModuleTime>
+      <ModuleName>ProjectManager.Entities</ModuleName>
+      <Classes />
+    </Module>
+    <Module hash="F8-AA-EA-59-E0-16-F9-35-0D-6A-77-A0-8F-B8-C1-D7-1A-95-16-0A">
+      <Summary numSequencePoints="121" visitedSequencePoints="114" numBranchPoints="50" visitedBranchPoints="44" sequenceCoverage="94.21" branchCoverage="88" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="14" numMethods="14" />
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\ProjectManager.Api.dll</ModulePath>
+      <ModuleTime>2018-11-28T04:13:04.3235838Z</ModuleTime>
+      <ModuleName>ProjectManager.Api</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api\Controllers\ProjectManagerController.cs" />
+      </Files>
+      <Classes>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;Module&gt;</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType0`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType1`1</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>&lt;&gt;f__AnonymousType2`3</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.UnityConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.UnityConfig/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.UnityWebApiActivator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.Utils.CollectionExtentions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.Security.CorsPolicyFactory</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.Security.CorsPolicyProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.Security.CorsPolicyProvider/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class>
+          <Summary numSequencePoints="121" visitedSequencePoints="114" numBranchPoints="50" visitedBranchPoints="44" sequenceCoverage="94.21" branchCoverage="88" maxCyclomaticComplexity="4" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="14" numMethods="14" />
+          <FullName>ProjectManager.API.Controllers.ProjectManagerController</FullName>
+          <Methods>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663327</MetadataToken>
+              <Name>System.Void ProjectManager.API.Controllers.ProjectManagerController::.ctor(ProjectManager.BusinessLayer.IProjectManagerService)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="35" uspid="1" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="74" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="35" uspid="2" ordinal="1" offset="7" sl="20" sc="9" el="20" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="35" uspid="3" ordinal="2" offset="8" sl="21" sc="13" el="21" ec="40" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="35" uspid="4" ordinal="3" offset="15" sl="22" sc="9" el="22" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="35" uspid="1" ordinal="0" offset="0" sl="19" sc="9" el="19" ec="74" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663328</MetadataToken>
+              <Name>System.Collections.Generic.ICollection`1&lt;ProjectManager.Entities.UserModel&gt; ProjectManager.API.Controllers.ProjectManagerController::GetUsers()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="5" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="6" ordinal="1" offset="1" sl="29" sc="13" el="29" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="7" ordinal="2" offset="13" sl="30" sc="13" el="30" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="8" ordinal="3" offset="25" sl="31" sc="13" el="31" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="9" ordinal="4" offset="29" sl="32" sc="9" el="32" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="5" ordinal="0" offset="0" sl="28" sc="9" el="28" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" nPathComplexity="8" sequenceCoverage="92.86" branchCoverage="85.71" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="13" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="92.86" branchCoverage="85.71" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663329</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::AddUser(ProjectManager.Entities.UserModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="10" ordinal="0" offset="0" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="11" ordinal="1" offset="1" sl="40" sc="13" el="40" ec="37" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="12" ordinal="2" offset="19" sl="41" sc="13" el="41" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="13" ordinal="3" offset="20" sl="42" sc="17" el="42" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="14" ordinal="4" offset="35" sl="45" sc="13" el="45" ec="70" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="15" ordinal="5" offset="53" sl="46" sc="13" el="46" ec="35" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="16" ordinal="6" offset="63" sl="47" sc="13" el="47" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="17" ordinal="7" offset="64" sl="48" sc="17" el="48" ec="37" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="18" ordinal="8" offset="73" sl="50" sc="13" el="50" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="19" ordinal="9" offset="86" sl="51" sc="13" el="51" ec="32" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="2" uspid="20" ordinal="10" offset="96" sl="52" sc="13" el="52" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="21" ordinal="11" offset="97" sl="53" sc="17" el="53" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="22" ordinal="12" offset="106" sl="55" sc="13" el="55" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="23" ordinal="13" offset="115" sl="56" sc="9" el="56" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="24" ordinal="0" offset="17" sl="40" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="3" uspid="25" ordinal="1" offset="17" sl="40" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="26" ordinal="2" offset="61" sl="46" path="0" offsetend="63" fileid="1" />
+                <BranchPoint vc="2" uspid="27" ordinal="3" offset="61" sl="46" path="1" offsetend="73" fileid="1" />
+                <BranchPoint vc="2" uspid="28" ordinal="4" offset="94" sl="51" path="0" offsetend="96" fileid="1" />
+                <BranchPoint vc="0" uspid="29" ordinal="5" offset="94" sl="51" path="1" offsetend="106" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="4" uspid="10" ordinal="0" offset="0" sl="38" sc="9" el="38" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" nPathComplexity="8" sequenceCoverage="92.86" branchCoverage="85.71" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="13" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="92.86" branchCoverage="85.71" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663330</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::UpdateUser(ProjectManager.Entities.UserModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="30" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="31" ordinal="1" offset="1" sl="63" sc="13" el="63" ec="37" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="32" ordinal="2" offset="19" sl="64" sc="13" el="64" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="33" ordinal="3" offset="20" sl="65" sc="17" el="65" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="34" ordinal="4" offset="35" sl="68" sc="13" el="68" ec="70" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="35" ordinal="5" offset="53" sl="69" sc="13" el="69" ec="35" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="36" ordinal="6" offset="63" sl="70" sc="13" el="70" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="37" ordinal="7" offset="64" sl="71" sc="17" el="71" ec="37" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="38" ordinal="8" offset="73" sl="73" sc="13" el="73" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="39" ordinal="9" offset="86" sl="75" sc="13" el="75" ec="32" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="1" uspid="40" ordinal="10" offset="96" sl="76" sc="13" el="76" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="41" ordinal="11" offset="97" sl="77" sc="17" el="77" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="42" ordinal="12" offset="111" sl="79" sc="13" el="79" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="43" ordinal="13" offset="120" sl="80" sc="9" el="80" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="44" ordinal="0" offset="17" sl="63" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="2" uspid="45" ordinal="1" offset="17" sl="63" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="46" ordinal="2" offset="61" sl="69" path="0" offsetend="63" fileid="1" />
+                <BranchPoint vc="1" uspid="47" ordinal="3" offset="61" sl="69" path="1" offsetend="73" fileid="1" />
+                <BranchPoint vc="1" uspid="48" ordinal="4" offset="94" sl="75" path="0" offsetend="96" fileid="1" />
+                <BranchPoint vc="0" uspid="49" ordinal="5" offset="94" sl="75" path="1" offsetend="111" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="30" ordinal="0" offset="0" sl="62" sc="9" el="62" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" nPathComplexity="4" sequenceCoverage="90.91" branchCoverage="80" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="11" visitedSequencePoints="10" numBranchPoints="5" visitedBranchPoints="4" sequenceCoverage="90.91" branchCoverage="80" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663331</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::DeleteUser(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="50" ordinal="0" offset="0" sl="86" sc="9" el="86" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="51" ordinal="1" offset="1" sl="87" sc="13" el="87" ec="65" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="52" ordinal="2" offset="14" sl="88" sc="13" el="88" ec="35" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="53" ordinal="3" offset="22" sl="89" sc="13" el="89" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="54" ordinal="4" offset="23" sl="90" sc="17" el="90" ec="35" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="55" ordinal="5" offset="32" sl="92" sc="13" el="92" ec="58" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="56" ordinal="6" offset="45" sl="94" sc="13" el="94" ec="24" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="1" uspid="57" ordinal="7" offset="52" sl="95" sc="13" el="95" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="58" ordinal="8" offset="53" sl="96" sc="17" el="96" ec="38" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="59" ordinal="9" offset="63" sl="98" sc="13" el="98" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="60" ordinal="10" offset="72" sl="99" sc="9" el="99" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="61" ordinal="0" offset="20" sl="88" path="0" offsetend="22" fileid="1" />
+                <BranchPoint vc="1" uspid="62" ordinal="1" offset="20" sl="88" path="1" offsetend="32" fileid="1" />
+                <BranchPoint vc="1" uspid="63" ordinal="2" offset="50" sl="94" path="0" offsetend="52" fileid="1" />
+                <BranchPoint vc="0" uspid="64" ordinal="3" offset="50" sl="94" path="1" offsetend="63" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="50" ordinal="0" offset="0" sl="86" sc="9" el="86" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663332</MetadataToken>
+              <Name>System.Collections.Generic.ICollection`1&lt;ProjectManager.Entities.ProjectModel&gt; ProjectManager.API.Controllers.ProjectManagerController::GetProjects()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="65" ordinal="0" offset="0" sl="104" sc="9" el="104" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="66" ordinal="1" offset="1" sl="105" sc="13" el="105" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="67" ordinal="2" offset="13" sl="106" sc="13" el="106" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="68" ordinal="3" offset="25" sl="107" sc="13" el="107" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="69" ordinal="4" offset="29" sl="108" sc="9" el="108" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="65" ordinal="0" offset="0" sl="104" sc="9" el="104" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" nPathComplexity="8" sequenceCoverage="92.86" branchCoverage="85.71" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="13" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="92.86" branchCoverage="85.71" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663333</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::AddProject(ProjectManager.Entities.ProjectModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="70" ordinal="0" offset="0" sl="114" sc="9" el="114" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="71" ordinal="1" offset="1" sl="116" sc="13" el="116" ec="37" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="72" ordinal="2" offset="19" sl="117" sc="13" el="117" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="73" ordinal="3" offset="20" sl="118" sc="17" el="118" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="74" ordinal="4" offset="35" sl="121" sc="13" el="121" ec="77" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="75" ordinal="5" offset="53" sl="122" sc="13" el="122" ec="30" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="76" ordinal="6" offset="63" sl="123" sc="13" el="123" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="77" ordinal="7" offset="64" sl="124" sc="17" el="124" ec="37" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="78" ordinal="8" offset="73" sl="126" sc="13" el="126" ec="56" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="79" ordinal="9" offset="86" sl="127" sc="13" el="127" ec="32" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="2" uspid="80" ordinal="10" offset="96" sl="128" sc="13" el="128" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="81" ordinal="11" offset="97" sl="129" sc="17" el="129" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="82" ordinal="12" offset="106" sl="131" sc="13" el="131" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="4" uspid="83" ordinal="13" offset="115" sl="132" sc="9" el="132" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="84" ordinal="0" offset="17" sl="116" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="3" uspid="85" ordinal="1" offset="17" sl="116" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="86" ordinal="2" offset="61" sl="122" path="0" offsetend="63" fileid="1" />
+                <BranchPoint vc="2" uspid="87" ordinal="3" offset="61" sl="122" path="1" offsetend="73" fileid="1" />
+                <BranchPoint vc="2" uspid="88" ordinal="4" offset="94" sl="127" path="0" offsetend="96" fileid="1" />
+                <BranchPoint vc="0" uspid="89" ordinal="5" offset="94" sl="127" path="1" offsetend="106" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="4" uspid="70" ordinal="0" offset="0" sl="114" sc="9" el="114" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663334</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::UpdateProject(ProjectManager.Entities.ProjectModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="90" ordinal="0" offset="0" sl="139" sc="9" el="139" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="91" ordinal="1" offset="1" sl="140" sc="13" el="140" ec="37" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="92" ordinal="2" offset="19" sl="141" sc="13" el="141" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="93" ordinal="3" offset="20" sl="142" sc="17" el="142" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="94" ordinal="4" offset="35" sl="150" sc="13" el="150" ec="59" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="95" ordinal="5" offset="48" sl="152" sc="13" el="152" ec="32" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="96" ordinal="6" offset="56" sl="153" sc="13" el="153" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="97" ordinal="7" offset="57" sl="154" sc="17" el="154" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="98" ordinal="8" offset="71" sl="156" sc="13" el="156" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="99" ordinal="9" offset="80" sl="157" sc="9" el="157" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="100" ordinal="0" offset="17" sl="140" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="2" uspid="101" ordinal="1" offset="17" sl="140" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="102" ordinal="2" offset="54" sl="152" path="0" offsetend="56" fileid="1" />
+                <BranchPoint vc="1" uspid="103" ordinal="3" offset="54" sl="152" path="1" offsetend="71" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="3" uspid="90" ordinal="0" offset="0" sl="139" sc="9" el="139" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663335</MetadataToken>
+              <Name>System.Collections.Generic.ICollection`1&lt;ProjectManager.Entities.TaskModel&gt; ProjectManager.API.Controllers.ProjectManagerController::GeTasks()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="104" ordinal="0" offset="0" sl="162" sc="9" el="162" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="105" ordinal="1" offset="1" sl="163" sc="13" el="163" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="106" ordinal="2" offset="13" sl="164" sc="13" el="164" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="107" ordinal="3" offset="25" sl="165" sc="13" el="165" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="108" ordinal="4" offset="29" sl="166" sc="9" el="166" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="104" ordinal="0" offset="0" sl="162" sc="9" el="162" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663336</MetadataToken>
+              <Name>System.Collections.Generic.ICollection`1&lt;ProjectManager.Entities.TaskModel&gt; ProjectManager.API.Controllers.ProjectManagerController::GetAllTaskForProject(ProjectManager.Entities.ProjectModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="109" ordinal="0" offset="0" sl="171" sc="9" el="171" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="110" ordinal="1" offset="1" sl="172" sc="13" el="172" ec="64" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="111" ordinal="2" offset="14" sl="173" sc="13" el="173" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="112" ordinal="3" offset="26" sl="174" sc="13" el="174" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="113" ordinal="4" offset="30" sl="175" sc="9" el="175" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="109" ordinal="0" offset="0" sl="171" sc="9" el="171" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663337</MetadataToken>
+              <Name>System.Collections.Generic.ICollection`1&lt;ProjectManager.Entities.TaskModel&gt; ProjectManager.API.Controllers.ProjectManagerController::GetParentTasks()</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="114" ordinal="0" offset="0" sl="180" sc="9" el="180" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="115" ordinal="1" offset="1" sl="181" sc="13" el="181" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="116" ordinal="2" offset="13" sl="182" sc="13" el="182" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="117" ordinal="3" offset="25" sl="183" sc="13" el="183" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="118" ordinal="4" offset="29" sl="184" sc="9" el="184" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="114" ordinal="0" offset="0" sl="180" sc="9" el="180" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="4" nPathComplexity="8" sequenceCoverage="92.86" branchCoverage="85.71" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="14" visitedSequencePoints="13" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="92.86" branchCoverage="85.71" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663338</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::AddTask(ProjectManager.Entities.TaskModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="119" ordinal="0" offset="0" sl="190" sc="9" el="190" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="120" ordinal="1" offset="1" sl="192" sc="13" el="192" ec="37" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="2" uspid="121" ordinal="2" offset="19" sl="193" sc="13" el="193" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="122" ordinal="3" offset="20" sl="194" sc="17" el="194" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="123" ordinal="4" offset="35" sl="197" sc="13" el="197" ec="73" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="3" uspid="124" ordinal="5" offset="53" sl="198" sc="13" el="198" ec="38" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="125" ordinal="6" offset="63" sl="199" sc="13" el="199" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="126" ordinal="7" offset="64" sl="200" sc="17" el="200" ec="37" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="127" ordinal="8" offset="73" sl="202" sc="13" el="202" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="128" ordinal="9" offset="86" sl="203" sc="13" el="203" ec="32" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="2" uspid="129" ordinal="10" offset="96" sl="204" sc="13" el="204" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="130" ordinal="11" offset="97" sl="205" sc="17" el="205" ec="29" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="131" ordinal="12" offset="106" sl="207" sc="13" el="207" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="5" uspid="132" ordinal="13" offset="115" sl="208" sc="9" el="208" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="133" ordinal="0" offset="17" sl="192" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="3" uspid="134" ordinal="1" offset="17" sl="192" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="135" ordinal="2" offset="61" sl="198" path="0" offsetend="63" fileid="1" />
+                <BranchPoint vc="2" uspid="136" ordinal="3" offset="61" sl="198" path="1" offsetend="73" fileid="1" />
+                <BranchPoint vc="2" uspid="137" ordinal="4" offset="94" sl="203" path="0" offsetend="96" fileid="1" />
+                <BranchPoint vc="0" uspid="138" ordinal="5" offset="94" sl="203" path="1" offsetend="106" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="5" uspid="119" ordinal="0" offset="0" sl="190" sc="9" el="190" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="3" nPathComplexity="4" sequenceCoverage="80" branchCoverage="80" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="10" visitedSequencePoints="8" numBranchPoints="5" visitedBranchPoints="4" sequenceCoverage="80" branchCoverage="80" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663339</MetadataToken>
+              <Name>System.Web.Http.IHttpActionResult ProjectManager.API.Controllers.ProjectManagerController::UpdateTask(ProjectManager.Entities.TaskModel)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="139" ordinal="0" offset="0" sl="215" sc="9" el="215" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="140" ordinal="1" offset="1" sl="216" sc="13" el="216" ec="37" bec="2" bev="1" fileid="1" />
+                <SequencePoint vc="0" uspid="141" ordinal="2" offset="19" sl="217" sc="13" el="217" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="0" uspid="142" ordinal="3" offset="20" sl="218" sc="17" el="218" ec="47" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="143" ordinal="4" offset="35" sl="226" sc="13" el="226" ec="53" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="144" ordinal="5" offset="48" sl="228" sc="13" el="228" ec="32" bec="2" bev="2" fileid="1" />
+                <SequencePoint vc="1" uspid="145" ordinal="6" offset="56" sl="229" sc="13" el="229" ec="14" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="146" ordinal="7" offset="57" sl="230" sc="17" el="230" ec="54" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="147" ordinal="8" offset="71" sl="232" sc="13" el="232" ec="33" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="148" ordinal="9" offset="80" sl="233" sc="9" el="233" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="149" ordinal="0" offset="17" sl="216" path="0" offsetend="19" fileid="1" />
+                <BranchPoint vc="2" uspid="150" ordinal="1" offset="17" sl="216" path="1" offsetend="35" fileid="1" />
+                <BranchPoint vc="1" uspid="151" ordinal="2" offset="54" sl="228" path="0" offsetend="56" fileid="1" />
+                <BranchPoint vc="1" uspid="152" ordinal="3" offset="54" sl="228" path="1" offsetend="71" fileid="1" />
+              </BranchPoints>
+              <MethodPoint xsi:type="SequencePoint" vc="2" uspid="139" ordinal="0" offset="0" sl="215" sc="9" el="215" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+            <Method visited="true" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="100" branchCoverage="100" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="1" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken>100663340</MetadataToken>
+              <Name>ProjectManager.Entities.TaskModel ProjectManager.API.Controllers.ProjectManagerController::GetTaskById(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="1" uspid="153" ordinal="0" offset="0" sl="239" sc="9" el="239" ec="10" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="154" ordinal="1" offset="1" sl="241" sc="13" el="241" ec="56" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="155" ordinal="2" offset="14" sl="242" sc="13" el="242" ec="50" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="156" ordinal="3" offset="26" sl="243" sc="13" el="243" ec="27" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="1" uspid="157" ordinal="4" offset="30" sl="244" sc="9" el="244" ec="10" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint xsi:type="SequencePoint" vc="1" uspid="153" ordinal="0" offset="0" sl="239" sc="9" el="239" ec="10" bec="0" bev="0" fileid="1" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.App_Start.GlobalExceptionHandler</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.API.App_Start.GlobalExceptionLogger</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.BundleConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.FilterConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.RouteConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.WebApiConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.WebApiApplication</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ApiDescriptionExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfig</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageAreaRegistration</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfigurationExtensions</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass14_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass15_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageConfigurationExtensions/&lt;&gt;c__DisplayClass16_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageSampleGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageSampleGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageSampleGenerator/&lt;GetAllActionSamples&gt;d__30</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.HelpPageSampleKey</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ImageSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.InvalidSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ObjectGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ObjectGenerator/SimpleTypeObjectGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ObjectGenerator/SimpleTypeObjectGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.TextSample</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.XmlDocumentationProvider</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.XmlDocumentationProvider/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.Models.HelpPageApiModel</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.CollectionModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.DictionaryModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.EnumValueDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator/&lt;&gt;c__DisplayClass3_0</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelNameAttribute</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelNameHelper</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ModelNameHelper/&lt;&gt;c</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ParameterAnnotation</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.ParameterDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.ModelDescriptions.SimpleTypeModelDescription</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.Controllers.HelpController</FullName>
+          <Methods />
+        </Class>
+        <Class skippedDueTo="Filter">
+          <FullName>ProjectManager.Api.Areas.HelpPage.Controllers.HelpController/&lt;&gt;o__7</FullName>
+          <Methods />
+        </Class>
+      </Classes>
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-9B-B5-71-3A-BE-A4-D1-7B-42-24-6F-13-97-0A-EB-C4-29-42-FE">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\System.Web.Http.dll</ModulePath>
+      <ModuleTime>2018-05-10T17:09:16Z</ModuleTime>
+      <ModuleName>System.Web.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D8-D0-AA-44-01-A4-68-06-BB-05-E0-D9-50-C0-0E-34-3C-7C-4B-7C">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2018-09-11T01:30:33.1251512Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Anonymously Hosted DynamicMethods Assembly</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DC-F4-0A-C8-75-B2-1A-32-F0-02-BF-85-DD-12-4B-9A-C7-9B-3D-61">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\NSubstitute.dll</ModulePath>
+      <ModuleTime>2017-10-27T15:33:00Z</ModuleTime>
+      <ModuleName>NSubstitute</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="56-AB-E3-3E-B0-AA-95-3F-45-FB-44-1F-D0-94-F5-7C-AB-43-67-F0">
+      <ModulePath>C:\ProjectManagement\project-management\Service\ProjectManager.Service\ProjectManager.Api.Tests\bin\Debug\Castle.Core.dll</ModulePath>
+      <ModuleTime>2017-09-27T20:04:34Z</ModuleTime>
+      <ModuleName>Castle.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>DynamicProxyGenAssembly2</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B6-03-A2-FF-5E-7B-F5-92-A1-04-2D-8A-21-BA-7A-73-59-C3-FA-B2">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:19.7011011Z</ModuleTime>
+      <ModuleName>System.ComponentModel.DataAnnotations</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

@@ -1,0 +1,112 @@
+<!-- <p>
+  view-user works!
+</p> -->
+<form [formGroup]="userForm" class="form-horizontal formStyle">
+
+    <div class="container-fluid justify-content ">
+  
+      <div class="row container-fluid reponseiveRowMargin">
+  
+        <div class="row container-fluid reponseiveRowMargin">
+          <label for="fNameInput" class="col-form-label col-sm-1 reponsiveLabel">First Name:
+                      </label>
+          <div class="form-group form-inline col-sm-4 col-ignore-padding">
+            <input id="fNameInput" type="text" placeholder="First Name..." class="form-control col-sm-12" [formControl]="fName" />
+          </div>
+          <div *ngIf="fName.invalid && fName.dirty && fName.errors?.required" class="alert alert-danger col-sm-5">
+            First Name is Required
+          </div>
+        </div>
+  
+        <div class="row container-fluid reponseiveRowMargin">
+          <label for="lNameInput" class="col-form-label col-sm-1 reponsiveLabel">Last Name:
+                        </label>
+          <div class="form-group form-inline col-sm-4 col-ignore-padding">
+            <input id="lNameInput" type="text" placeholder="Last Name..." class="form-control col-sm-12" [formControl]="lName" />
+          </div>
+          <div *ngIf="lName.invalid && lName.dirty && lName.errors?.required" class="alert alert-danger col-sm-5">
+            Last Name is Required
+          </div>
+        </div>
+  
+        <div class="row container-fluid reponseiveRowMargin">
+          <label for="empIdInput" class="col-form-label col-sm-1 reponsiveLabel">Employee Id:
+                          </label>
+          <div class="form-group form-inline col-sm-4 col-ignore-padding">
+            <input id="empIdInput" type="text" placeholder="Employee Id..." class="form-control col-sm-12" [formControl]="empId" />
+          </div>
+          <div *ngIf="empId.invalid && empId.dirty && empId.errors?.required" class="alert alert-danger col-sm-5">
+            Employee Id is Required
+          </div>
+        </div>
+  
+        <div class="row container-fluid reponseiveRowMargin">
+          <div class="col-sm-5 col-ignore-padding">
+            <div class="float-right col-ignore-padding justify-content-end">
+              <button class="btn btn-primary btn-action-margin" (click)="onUserSave()" value="Add User">{{btnAction}} User</button>
+              <button class="btn btn-primary btn-action-margin" value="Reset" type="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade" bsModal #alertModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="dialog-static-name">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 id="dialog-static-name" class="modal-title pull-left">Confirm?</h4>
+                <button type="button" class="close pull-right" aria-label="Close" (click)="alertModal.hide()">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+              </div>
+              <div class="modal-body">
+                <p>Do you want to {{btnAction}} User?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="confirm()">Yes</button>
+                <button type="button" class="btn btn-default" (click)="decline()">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <!-- <div class="row">
+        <div class="col-12">
+  
+          <div class="form-group form-inline">
+            <label for="fNameInput" class="fieldlabelleft col-2">First Name: </label>
+            <input id="fNameInput" type="text" placeholder="First Name" class="form-control col-4" [formControl]="fName">
+            <div *ngIf="fName.invalid && fName.dirty && fName.errors?.required" class="alert alert-danger col-6">
+              First Name is Required
+            </div>
+          </div>
+  
+          <div class="form-group form-inline">
+            <label for="lNameInput" class="fieldlabelleft col-2">Last Name: </label>
+            <input id="lNameInput" type="text" placeholder="Last Name" class="form-control col-4" [formControl]="lName">
+            <div *ngIf="lName.invalid && lName.dirty && lName.errors?.required" class="alert alert-danger col-6">
+              Last Name is Required
+            </div>
+          </div>
+  
+          <div class="form-group form-inline">
+            <label for="empIdInput" class="fieldlabelleft col-2">Employee Id: </label>
+            <input id="empIdInput" type="text" placeholder="Employee Id" class="form-control col-2" [formControl]="empId">
+            <div *ngIf="empId.invalid && empId.dirty && empId.errors?.required" class="alert alert-danger col-8">
+              Employee Id is Required
+            </div>
+          </div>
+  
+          <div class="col-6">
+            <div class="float-right">
+              <button class="btn btn-primary btn-action-margin" (click)="onUserSave()" value="Add User">{{btnAction}} User</button>
+              <button class="btn btn-primary " value="Reset" type="reset">Reset</button>
+  
+              
+  
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </form>

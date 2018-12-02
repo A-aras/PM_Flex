@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  font-size: 12px;
+}
+
+.label-block {
+  font-weight: normal;
+  display: block;
+  padding: 6px 12px;
+  margin: 0;
+  border: 1px solid transparent;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  width: 100%;
+}
+
+.fieldlabelleft {
+  justify-content: left !important;
+}
+
+.formStyle {
+  margin-top: 50px !important;
+}
+
+.btn-action-margin {
+  margin-right: 3px !important;
+  /*margin-left: 20px!important;
+     padding-right: 20px!important;
+    padding-left: 20px!important; */
+}
+
+/* 
+.btn-form-margin
+{
+    margin-left: 10px!important;
+} */
+
+@media screen and (max-width: 768px) {
+  .btn-reponsive-margin {
+    margin-top: 3px !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .btn-reponsive-margin {
+    margin-left: 10px !important;
+  }
+}
+
+.col-ignore-padding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+[class*="slider-text-position-"] {
+  position: absolute;
+  top: 12px;
+  opacity: .6;
+}
+
+.slider-text-position-min {
+  left: 5px;
+}
+
+.slider-text-position-max {
+  right: 5px;
+}
+
+.reponseiveRowMargin {
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .reponseiveRowMargin {
+    padding-bottom: 1px;
+    padding-top: 1px;
+  }
+}
+
+.reponsiveLabel {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .reponsiveLabel {
+        padding-left: 2px !important;
+        /* padding-right: 15px !important; */
+    }
+  }
+
+  .details-header-panel-height
+  {
+    height: 30%!important;
+    width: 100%!important;
+  }
+
+  .details-details-panel-height
+  {
+    height: 70%!important;
+    width: 100%!important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .details-header-panel-height
+    {
+      height: 40%!important;
+      width: 100%!important;
+    }
+  
+    .details-details-panel-height
+    {
+      height: 60%!important;
+      width: 100%!important;
+    } 
+  }
+
+  .reponseiveDetailsRowMargin {
+    /* padding-bottom: 5px !important; */
+    padding-top: 5px !important;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .reponseiveDetailsRowMargin {
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+  }
+
+  
+  .date-check-box-responsive {
+    padding-top: 8px !important;
+  }
+
+  @media screen and (max-width:768px)
+  {
+    .date-check-box-responsive {
+        padding-top: 1px !important;
+      }
+  }
+  /* .reponseiveRowMargin {
+    padding-bottom: 1px;
+    padding-top: 1px;
+  } */
+
+/* .btn-form-margin
+    {
+        margin-left: 0px!important;
+    }
+    
+     */

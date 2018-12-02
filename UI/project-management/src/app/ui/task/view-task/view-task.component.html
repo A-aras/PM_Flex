@@ -1,0 +1,118 @@
+<div class="container-fluid">
+    <div class="row container-fluid" style="margin-top: 75px">
+      <div class="col-lg-3 col-md-3 col-sm-4 form-inline">
+        <form [formGroup]="searchForm" class="form-inline">
+          <label for="searchInput">Project :&nbsp;&nbsp;</label>
+          <input id="searchInput" type="text" placeholder="Search..." class="form-control" [formControl]="searchInputControl" />
+          &nbsp;&nbsp;
+          <button class="btn btn-primary btn-action-margin" (click)="onSearchProject()" value="Search">
+            Search
+          </button>
+          <app-search-module [inputValue]="serarchInputValues" [columnsDisplay]="columnsDisplay" [fieldType]="popupModelType" [searchFields]="searchFields"
+                (rowSelected)="HandleRowSelected($event)"></app-search-module>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-5  form-inline">
+        <div class="col-lg-2 col-md-2 col-sm-3">
+          <span>Sort:</span>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 btn-group">
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('StartDate')" value="StartDate">
+            Start Date
+          </button>
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('EndDate')" value="EndDate">
+            End Date
+          </button>
+  
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('Priority')" value="Priority">
+            Priority
+          </button>
+  
+          <button class="btn btn-primary btn-action-margin" (click)="onSort('IsClosed')" value="Completed">
+            Completed
+          </button>
+        </div>
+      </div>
+    </div>
+  <hr>
+    <div class="row container-fluid">
+      <div class="col-12">
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="
+          let task of (tasks
+                | sort: sortBy ) ">
+              <!-- let task of (tasks
+                | sort: sortBy
+                | commonFilter: ['TaskDescription']:searchUserInputValue)
+            "> -->
+            <div class="container-fluid additional-margin">
+              <div class="row">
+                <div class="col-md-3">
+                  <span style="display: block;">Task</span>
+                  <span class="details">{{ task.TaskDescription }}</span>
+                </div>
+                
+                <div class="col-md-3">
+                  <span>Parent Task</span>
+                  <span class="details">{{ task.ParentTask?.TaskDescription }}
+                  </span>
+                </div>
+  
+                <div class="col-md-1">
+                  <span style="display: block;">Priority</span>
+                  <span style="display: block;">{{ task.Priority }}</span>
+                </div>
+                <div class="col-md-2">
+                  <span style="display: block;">Start</span>
+                  <span style="display: block;">{{ task.StartDate | date: "dd/MMM/yyyy" }}
+                  </span>
+                </div>
+                <div class="col-md-2">
+                  <span style="display: block;">End</span>
+                  <span style="display: block;">{{ task.EndDate | date: "dd/MMM/yyyy" }}
+                  </span>
+                </div>
+                <div class="col-md-1">
+                  <!-- <span></span> -->
+                  <button class="btn btn-primary" style=" margin-bottom: 5px ; margin-right: 10px " [disabled]="task.IsClosed" (click)="OnEditTask(task)">
+                    Edit
+                  </button>
+                  <button class="btn btn-primary" style=" margin-bottom: 5px " [disabled]="task.IsClosed" (click)="OnEndTask(task)">
+                    End
+                  </button>
+                </div>
+              </div>
+              <!--
+                <div class="row">
+                  <div class="col-md-3" style="background-color: lightgray">
+                    <span>{{ task.TaskDescription }}</span>
+                  </div>
+                  <div class="col-md-3" style="background-color: lightgray">
+                    <span>{{ task.ParentTask?.TaskDescription }}</span>
+                  </div>
+                  <div class="col-md-1">
+                    <span>{{ task.Priority }}</span>
+                  </div>
+                  <div class="col-md-1">
+                    <span>{{ task.StartDate |date:"dd/MMM/yyyy" }}</span>
+                  </div>
+                  <div class="col-md-1">
+                    <span>{{ task.EndDate |date:"dd/MMM/yyyy" }}</span>
+                  </div>
+                  <div class="col-md-3form-inline">
+                    <button class="btn btn-primary" style=" margin-bottom: 5px " [disabled]="!project.IsClosed" (click)="onEditProject(project)">
+                      Edit
+                    </button>
+                    <button class="btn btn-primary" style=" margin-bottom: 5px " [disabled]="!project.IsClosed" (click)="onEditProject(project)">
+                      End
+                    </button>
+                  </div>
+                </div>
+              -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

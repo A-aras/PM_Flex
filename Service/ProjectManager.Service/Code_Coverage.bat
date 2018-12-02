@@ -1,0 +1,2 @@
+%cd%\opencover.4.6.519\OpenCover.Console.exe -register:user -target:"C:\Program Files (x86)\NUnit 2.6.1\bin\nunit-console.exe" -targetargs:"%cd%\ProjectManager.Api.Tests\bin\Debug\ProjectManager.Api.Tests.dll /noshadow" -filter:"+[ProjectManager.Api]*Controller -[ProjectManager.Api.Tests]* -[ProjectManager.Api]*Areas*" -excludeByAttribute:"System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage" -output:"%cd%\CodeCoverage_Report\Project_Code_Coverage.xml"
+pause
