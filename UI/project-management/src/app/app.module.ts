@@ -23,6 +23,9 @@ import { ArrayLenghtPipe } from './pipes/arraylenght.pipe';
 import { ViewTaskComponent } from './ui/task/view-task/view-task.component';
 import { AddTaskComponent } from './ui/task/add-task/add-task.component';
 import { SearchModuleComponent } from './ui/search/search-module/search-module.component';
+import { InjectableRxStompConfig, RxStompService, rxStompServiceFactory } from '@stomp/ng2-stompjs';
+import { stompConfig } from 'src/app/message/message.service.config';
+import { MessageService } from 'src/app/message/message.service';
 
 
 @NgModule({
@@ -52,7 +55,18 @@ import { SearchModuleComponent } from './ui/search/search-module/search-module.c
     DatepickerModule.forRoot(),
     ModalModule.forRoot()
   ],
-  providers: [{provide: IPmApiService,useClass:PmApiService}],
+  providers: [
+    {provide: IPmApiService,useClass:PmApiService},
+    {
+    provide: InjectableRxStompConfig,
+    useValue: stompConfig
+  },
+  {
+    provide: RxStompService,
+    useFactory: rxStompServiceFactory,
+    deps: [InjectableRxStompConfig]
+  },{provide:MessageService}],
+   
   bootstrap: [AppComponent]
 })
 export class AppModule { }

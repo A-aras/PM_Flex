@@ -43,6 +43,8 @@ import { DatepickerModule } from "ngx-bootstrap/datepicker/datepicker.module";
 import { createDate } from "ngx-bootstrap/chronos/create/date-from-array";
 import { getTomorrowDate, getCurrentDate } from "src/app/utils/date-util";
 import { TaskModel } from "src/app/model/task-model";
+import { RxStompService } from "@stomp/ng2-stompjs";
+import { Message } from "@stomp/stompjs";
 
 @Component({
   selector: "app-add-task",
@@ -162,11 +164,18 @@ export class AddTaskComponent implements OnInit {
     private router: Router,
     private activeRoute: ActivatedRoute,
     private modalService: BsModalService,
-    private serviceBus: PmServiceBus
+    private serviceBus: PmServiceBus,
+    private rxStompService: RxStompService
   ) {
     setTheme("bs4");
     this.initFormsControl();
     //this.model.endDate=this.model.startDate.addDays(1);
+
+    this.rxStompService.watch('ws://localhost:55887/api/Message/Subscribe').subscribe((message: Message) => {
+
+      //this.receivedMessages.push(message.body);
+    });
+
   }
 
   ngOnInit() {

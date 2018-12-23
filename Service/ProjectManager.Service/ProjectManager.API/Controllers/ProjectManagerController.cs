@@ -1,4 +1,5 @@
-﻿using ProjectManager.BusinessLayer;
+﻿using ProjectManager.Api.Controllers;
+using ProjectManager.BusinessLayer;
 using ProjectManager.Entities;
 using System;
 using System.Collections.Generic;
@@ -250,6 +251,17 @@ namespace ProjectManager.API.Controllers
             var result = pmService.GetTaskById(taskId);
             Console.WriteLine(result.ToString());
             return result;
+        }
+
+        [Route("api/Task/PostMessge")]
+        [HttpGet]
+        public void PostMessge()
+        {
+
+            NotificationController.Post(new Api.Models.NotificationMessage() { Action = "Test Action", MessageType = "Test Message" });
+            //var result = pmService.GetTaskById(taskId);
+            //Console.WriteLine(result.ToString());
+            //return result;
         }
 
     }
